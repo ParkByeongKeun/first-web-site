@@ -4,25 +4,73 @@
     <head>
         <title>타이틀 테스트 | WEB - CSS</title>
         <meta charset="utf-8">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLFVQ9SEY2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HLFVQ9SEY2');
+        </script>
+
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
-        <h1><a href="test.html">WEB</a></h1>
+        <h1><a href="index.html">WEB</a></h1>
 
-        <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-        </ol>
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">HTML</a></li>
+                <li><a href="2.html">CSS</a></li>
+                <li><a href="3.html">JavaScript</a></li>
+            </ol>
+    
+    
+            <div id="article">
+    
+                <h2>CSS 란?</h2>
+    
+                test
+                <br>
+    
+                <img width="10%" height="200" src="coding.jpg">
+    
+                <p style="margin-top: 40px">test,test , html test hypertext markup language (HTML) is the standard markup language for <strong>creating <u>web</u> pages </strong> web applications.</p>
+    
+    
+                <div id="disqus_thread"></div>
+                
+            </div>
+        </div>
+        
+        
 
-        <h2>CSS</h2>
+        <!-- 댓글 -->
 
-        <a title="test" href="https://opentutorials.org/course/3084/18438">Hello world</a> , html test hypertext markup language (HTML) is the standard markup language for <strong>creating <u>web</u> pages </strong> web applications.
+        <script>
 
-        <img width="20%" src="coding.jpg">
-        <p style="margin-top: 40px">test,test , html test hypertext markup language (HTML) is the standard markup language for <strong>creating <u>web</u> pages </strong> web applications.</p>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-bxxtnrs1qs.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
+        <!-- 댓글 -->
     </body>
     
 </html>

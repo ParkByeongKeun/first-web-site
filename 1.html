@@ -3,33 +3,78 @@
     <head>
         <title>타이틀 테스트 | WEB - html</title>
         <meta charset="utf-8">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLFVQ9SEY2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HLFVQ9SEY2');
+        </script>
+
+        <link rel="stylesheet" href="style.css">
+
     </head>
 
     <body>
 
-        <h1><a href="test.html">WEB</a></h1>
-
-        <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-        </ol>
+        <h1><a href="index.html">WEB</a></h1>
 
 
-        <h2>HTML</h2>
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">HTML</a></li>
+                <li><a href="2.html">CSS</a></li>
+                <li><a href="3.html">JavaScript</a></li>
+            </ol>
+    
+    
+            <div id="article">
+    
+                <h2>HTML이란 무엇인가?</h2>
+    
+                <a title="test" href="https://opentutorials.org/course/3084/18438">(참고)</a> , HTML은 문법 오류에 관대한 편이다.[2][3] 그래서 닫는 태그를 누락한다든가[4] 태그에 오타가 난다든가 하는 오류가 발생해도 어느 정도는 씹어먹고 작동할 수 있다. 물론 '어느 정도'까지만이다. 태그 등 중요한 태그에서 오타가 난다면 사이트 레이아웃이 홀랑 깨져버리기도 한다. 위에 있는 HTML5 표준 형식 HTML이 아니더라도, 그냥 Hello World!라고만 써도 선언문 누락, 선언 태그 누락, 태그 누락, 닫는 태그 누락 어지간해서는 의도한 바대로 출력이 된다. 물론 디버그 모드[5]로 보면 이 부분이 잘못되었다고 에러가 떠 있을 것이다. HTML 최상단의 선언이 누락될 경우에는 이야기가 많이 달라지는데, 이 경우 브라우저는 해당 HTML 문서를 호환성 모드(Quirks mode)[7]로 해석하여 렌더링한다
+                    그러나 HTML은 서버에서 보내오는 정보대로 페이지를 그려내는 것에는 강하지만 반대로 사용자의 입력에 민감하게 반응하여 페이지를 그리는 것에는 약한 편이다. 또한 동적인 화면 구성이 힘들다는 약점도 있다. 이러한 면을 보완하기 위하여 JavaScript 등의 각종 스크립트의 도움을 받으며, 요즘 유행하는 AJAX도 그런 면을 보완하기에 적합하다. 그 외에 멀티미디어 지원을 위하여 외부 프로그램을 불러올(embedding) 수 있다. 다만 이는 브라우저 의존적인 면이 강하여, 이 브라우저로 잘 표시되는 페이지가 다른 브라우저로는 완전 엉망이 되는 경우도 있다. HTML5는 비디오/오디오 처리를 위한 별도의  태그를 추가하고 동적인 그래픽은 와  태그를 통해 사용할 것을 권고하고 있으며 외부 플러그인은 가급적 사용하지 않으려 하고 있다. 그래도 아직은 태그와 태그를 통해 외부 플러그인(플래시 등)을 제한적으로 실행할 수는 있다. 하지만 2021년부터 어도비가 플래시 지원을 종료해서 사용하지 않을 것을 권고한다. 어차피 플래시로 하던 기능을 HTTP, CSS, JavaScript (혹은 Node.js) 등으로 통폐합 시키게 된다.
+                    수많은 기술 블로그에서 HTML을 두고 계층 구조로 알려주지만 이는 사실과 다르다. 모질라닷컴의 HTML 소개에서도 계층이라는 단어는 존재하지 않는다. HTML은 계층처럼 보일 뿐이며, 브라우저에서 태그대로 그대로 그려낼 뿐이다. 진짜 트리 구조는 HTML이 아닌 자바스크립트의 Document Object Model, 통칭 DOM이다.<strong>creating <u>web</u> pages </strong> web applications.
+    
+                <br>
+    
+                <img width="10%" height="200" src="coding.jpg">
+    
+                <p style="margin-top: 40px">test,test , html test hypertext markup language (HTML) is the standard markup language for <strong>creating <u>web</u> pages </strong> web applications.</p>
+    
+    
+                <div id="disqus_thread"></div>
+                
+            </div>
+        </div>
+        
+        
 
-        <a title="test" href="https://opentutorials.org/course/3084/18438">Hello world</a> , html test hypertext markup language (HTML) is the standard markup language for <strong>creating <u>web</u> pages </strong> web applications.
+        <!-- 댓글 -->
 
+        <script>
 
-        <p style="margin-top: 40px">웹(web)은 기본적으로 거미줄을 뜻한다.
-            월드 와이드 웹(World Wide Web)의 약자
-            월드와이드웹: 세계 최초의 웹 브라우저
-            웹 2.0, 웹 3.0
-            웹사이트(website)
-            웹(WEB)은 도널드 커누스가 제안한 프로그래밍 시스템이다.
-            웹(Web)은 그놈 데스크톱의 웹 브라우저이다.
-            </p>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://web1-bxxtnrs1qs.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
+        <!-- 댓글 -->
     </body>
 </html>
 
