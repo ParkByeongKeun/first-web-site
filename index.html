@@ -20,6 +20,19 @@
     <body>
         <h1><a href="index.html">WEB</a></h1>
 
+        <input id="night_day" type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if (document.querySelector('#night_day').value === 'night') {
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                document.querySelector('#night_day').value = 'day';
+            } else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                document.querySelector('#night_day').value = 'night';
+            }
+        ">
+        
         <div id="grid">
             <ol>
                 <li><a href="1.html">HTML</a></li>
